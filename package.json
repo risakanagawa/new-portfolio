@@ -16,7 +16,9 @@
     "@fortawesome/react-fontawesome": "^0.1.4",
     "font-awesome": "^4.7.0",
     "react": "^16.8.4",
+    "react-anchor-link-smooth-scroll": "^1.0.12",
     "react-dom": "^16.8.4",
+    "react-scroll": "^1.7.11",
     "typeit": "^6.0.2"
   },
   "devDependencies": {

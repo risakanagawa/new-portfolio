@@ -4,7 +4,7 @@ import resume from '../../public/document/resume-risa-kanagawa.pdf';
 class AboutMe extends Component {
   render() {
     return (
-      <div className="about-container">
+      <div id='about' className="about-container">
         <div className="about-back-text">
           <h1>About</h1>
           <h1>Me</h1>

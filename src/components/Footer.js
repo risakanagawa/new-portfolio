@@ -24,7 +24,7 @@ class Footer extends Component {
   };
   render() {
     return (
-      <footer className="footer">
+      <footer  id='contact' className="footer">
         <h1>Say Hi!</h1>
         <div className="contact-table">
           <div className="contact-left">

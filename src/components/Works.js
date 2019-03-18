@@ -35,7 +35,7 @@ class Works extends Component {
 
   render() {
     return (
-      <div className="work-container">
+      <div  id='work' className="work-container">
         <div className="work-heading">
           <h1>Works</h1>
         </div>
