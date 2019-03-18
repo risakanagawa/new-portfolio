@@ -1,0 +1,85 @@
+/********************************************
+
+AboutMe
+
+********************************************/
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+    height: 100vh;
+    position: relative;
+    @include tablet {
+        flex-direction: row;
+    }
+    .about-back-text {
+        position: absolute;
+        top: 150px;
+        width: 200px;
+        @include tablet {
+            top: 100px;
+        }
+        h1 {
+            font-size: 5rem;
+            color: $light-color;
+            z-index: 1;
+            font-family: 'Abril Fatface', cursive;
+            @include tablet {
+                font-size: 7rem;
+            }
+        }
+    }
+}
+
+.about-right {
+    width: 80%;
+    z-index: 9;
+    .about-right-contents {
+        justify-content: space-around;
+        display: flex;
+    }
+    @include tablet {
+        @include halfContents;
+    }
+}
+
+.about-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 9;
+    height: 60%;
+    @include tablet {
+        @include halfContents;
+        padding-left: 50px;
+        box-sizing: border-box;
+        height: 100%;
+    }
+    h2 {
+        font-size: 3rem;
+        @include tablet {
+            font-size: 5rem;
+        }
+    }
+    p {
+        font-weight: lighter;
+        line-height: 2rem;
+    }
+    .resume-btn {
+        text-align: center;
+        text-decoration: none;
+        color: #fff;
+        background-color: $brand-color;
+        padding: .7rem 1.2rem;;
+        width: 100px;
+        border-radius: 5px;
+        border: none;
+        font-size: .8rem;
+        margin: 20px 0 0 40%;
+        &:hover {
+            background-color: #ce4c4c;
+        }
+    }
+}

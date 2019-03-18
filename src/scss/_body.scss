@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,700i,900');
+
+* {
+    background-color: none;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 3rem;
+    font-family: 'Abril Fatface', cursive;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.6rem;
+}
+
+$brand-color: #FF5A5A;
+$light-color: #C7F5E6;
+$border-color: #A0B4AE;
+
+.body-wrapper {
+    border: 10px solid $border-color;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}

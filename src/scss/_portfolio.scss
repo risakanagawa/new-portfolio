@@ -1,0 +1,48 @@
+/********************************************
+
+PORTFOLIO PAGE
+
+********************************************/
+
+.work-container {
+    display: flex;
+    width: 95%;
+    position: relative;
+    .work-heading {
+        width: 100%;
+        position: absolute;
+        top: -120px;
+        color: $light-color;
+        z-index: -1;
+        h1 {
+            font-size: 5rem;
+        }
+        @include tablet {
+            left: -60px;
+            top: -10px;
+            h1 {
+                font-size: 8rem;
+                margin-left: 50px;
+                -webkit-writing-mode: vertical-rl;
+                -ms-writing-mode: tb-rl;
+                writing-mode: vertical-rl;
+            }
+        }
+    }
+}
+
+.work-table {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.work {
+    height: 200px;
+    width: 300px;
+    margin: 20px 0;
+    @include desktop {
+        height: 300px;
+        width: 500px;
+    }
+}
