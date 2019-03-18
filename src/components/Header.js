@@ -2,16 +2,17 @@ import React, { Component } from "react";
 import Navigation from "../partials/Navigation";
 import TypeIt from "typeit";
 
-var MAX = 6;
-var RADIUS = 50;
-var FPS = 25;
-var CENTER = { x: 100, y: 200 };
+let screenWidth = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+let isDesktop =  screenWidth > 400;
+let MAX =  isDesktop? 6 : 4;
+let RADIUS =isDesktop ? 50 : 30;
+let FPS = 25;
+let CENTER = isDesktop ?{ x: 100, y: 200 }:{ x: 10, y: 20 };
 let x_speed = 3;
 let y_speed = 3;
-var directionX = 'right'
-var canvas, ctx, timer, point;
-var stats;
-var mouseFlag = true;
+let canvas, ctx, timer, point;
+let stats;
+let mouseFlag = true;
 
 var Point = function(c, r, rota) {
   this.x, this.y;
@@ -26,25 +27,30 @@ var Point = function(c, r, rota) {
   this.rota = 0;
 
   this.update = function() {
-    var plus = Math.cos(this.rota * (Math.PI / 180)) * this.r;
-    if(this.centerX > canvas.width - 100) {
-      x_speed = -3
-    }else if(this.centerX <= 100){
-      x_speed =3    
+    let plus = Math.cos(this.rota * (Math.PI / 180)) * this.r;
+    if (this.centerX + 50 > canvas.width) {
+      x_speed = -3;
+    } else if (this.centerX <= 50) {
+      x_speed = 3;
     }
-      this.centerX = this.centerX + x_speed;
-    
+    if (this.centerY + 50 > canvas.height) {
+      y_speed = -3;
+    } else if (this.centerY <= 50) {
+      y_speed = 3;
+    }
+    this.centerX = this.centerX + x_speed;
+    this.centerY = this.centerY + y_speed;
+
     this.y_speed = 3;
     this.radius += plus;
 
-    var cos = Math.cos(this.radian) * this.radius;
-    var sin = Math.sin(this.radian) * this.radius;
+    let cos = Math.cos(this.radian) * this.radius;
+    let sin = Math.sin(this.radian) * this.radius;
 
     this.x = cos + this.centerX;
     this.y = sin + this.centerY;
 
     this.rota += this.speed;
-    
 
     if (this.rota > 360) {
       this.rota -= 360;
@@ -61,7 +67,6 @@ function initialize() {
 }
 
 function update() {
-
   for (var i = 0; i < MAX; i++) {
     point[i].update();
   }
@@ -122,7 +127,10 @@ function changeFlag() {
 
 window.onload = function(e) {
   canvas = document.getElementById("canvas");
-
+  canvas.style.width = '100%';
+  canvas.style.height = '100%';
+  canvas.width = canvas.offsetWidth;
+  canvas.height = canvas.offsetHeight;
   ctx = canvas.getContext("2d");
   ctx.fillStyle = "rgba(255, 90, 90, 1)";
   point = [];
@@ -161,11 +169,9 @@ class Header extends Component {
             </div>
           </div>
           <div className="header-right">
-            <h2 className="canvas-backgrou">
-              <div id="canvasArea">
-                <canvas id="canvas" width="400" height="400" />
-              </div>
-            </h2>
+            <div id="canvasArea">
+              <canvas id="canvas" />
+            </div>
           </div>
         </div>
       </div>

@@ -37,12 +37,72 @@ PORTFOLIO PAGE
     justify-content: space-around;
 }
 
-.work {
+.project-item {
+    border: $brand-color 2px solid;
     height: 200px;
     width: 300px;
     margin: 20px 0;
+    overflow: hidden;
+    position: relative;
     @include desktop {
         height: 300px;
         width: 500px;
+    }
+    a {
+        display: flex;
+        height: 100%;
+        align-items: center;
+        color: transparent;
+        font-size: 16px;
+        justify-content: space-between;
+        letter-spacing: 0.05em;
+        overflow: hidden;
+        padding: 0 7px 0 32px;
+        position: relative;
+        text-decoration: none;
+        width: 100%;
+        cursor: pointer;
+    }
+    &Ef {
+        &__bg {
+            background: $brand-color;
+            width: 100%;
+            height: 100%;
+            // opacity: 0.9;
+            position: absolute;
+            top: 0;
+            left: 33px;
+            transition: .3s ease-in-out;
+            transform: skewX(-50deg) translateX(-418px);
+        }
+        &__text {
+            color: #fff;
+            position: absolute;
+            top: 50%;
+            left: -294px;
+            transition: .3s ease-in-out;
+            transform: translateY(-50%);
+            width: 100%;
+        }
+    }
+    &:hover {
+        .c-btnEf {
+            &__bg {
+                background: $brand-color;
+                width: 100%;
+                height: 100%;
+                // opacity: 0.9;
+                position: absolute;
+                transition: .3s ease-in-out;
+                transform: skewX(-20deg) translateX(-200px);
+            }
+            &__text {
+                color: #fff;
+                position: absolute;
+                left: 34px;
+                transition: .3s ease-in-out;
+                width: 100%;
+            }
+        }
     }
 }
