@@ -46,7 +46,6 @@ class Works extends Component {
 }
 
 const mapStateToProps = state => {
-  console.log(state);
   return { projects: state.projects.projects };
 };
 

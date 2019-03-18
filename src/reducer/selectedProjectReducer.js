@@ -3,8 +3,6 @@ const initialState = {
 };
 
 export default (state = initialState, action) => {
-  console.log("reducer");
-  console.log(action.payload);
   switch (action.type) {
     case "SELECTED_ITEM":
       return [action.payload];

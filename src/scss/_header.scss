@@ -76,6 +76,11 @@ HEADER
     h1 {
         color: $brand-color;
         font-family: 'Abril Fatface', cursive;
+        transition: .6s;
+        &:hover {
+            -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+          }
     }
     ul {
         list-style: none;

@@ -10,7 +10,7 @@ const design1 = require("../../public/img/dailyUI01.gif");
 const alohaDesktop = require("../../public/img/alohaDesktop.png");
 const instanewsDesktop = require("../../public/img/instanewsDesktop.png");
 const inhabitentDesktop = require("../../public/img/inhabitentDesktop.png");
-const quotesondevDesktop = require("../../public/img/devquotesDesktop.png");
+const quotesondevDesktop = require("../../public/img/quotesondevDesktop.png");
 const meetupDesktop = require("../../public/img/meetupDesktop.png");
 const ponggameDesktop = require("../../public/img/ponggameDesktop.png");
 
@@ -20,7 +20,7 @@ const initialState = {
       name: "Vancouver Meetup Seacher",
       type: "development",
       img: meetup,
-    //   mockup: meetupDesktop,
+      mockup: meetupDesktop,
       technology: ["React", "Redux", "Google Map", "React-Router", "MeetupAPI"],
       url: "https://github.com/risakanagawa/search-events"
     },
@@ -28,7 +28,7 @@ const initialState = {
       name: "Aloha project",
       type: "development",
       img: aloha,
-    //   mockup: alohaDesktop,
+      mockup: alohaDesktop,
       technology: ["HTML", "CSS", "jQuery"],
       url: "https://github.com/risakanagawa/Aloha"
     },
@@ -36,7 +36,7 @@ const initialState = {
       name: "Instanews App",
       type: "development",
       img: instanews,
-    //   mockup: instanewsDesktop,
+      mockup: instanewsDesktop,
       technology: ["HTML", "CSS", "jQuery", "NYtimesAPI"],
       url: "https://github.com/risakanagawa/instanews"
     },
@@ -44,7 +44,7 @@ const initialState = {
       name: "Classic Ponggame",
       type: "development",
       img: ponggame,
-    //   mockup: ponggameDesktop,
+      mockup: ponggameDesktop,
       technology: ["HTML", "CSS", "JavaScript"],
       url: "https://github.com/risakanagawa/ponggame"
     },
@@ -52,7 +52,7 @@ const initialState = {
       name: "Inhabitent",
       type: "development",
       img: inhabitent,
-    //   mockup: inhabitentDesktop,
+      mockup: inhabitentDesktop,
       technology: ["HTML", "CSS", "jQuery", "PHP", "WordPress"],
       url: "https://github.com/risakanagawa/inhabitent"
     },
@@ -60,7 +60,7 @@ const initialState = {
       name: "Quotes on Devs",
       type: "development",
       img: devquotes,
-    //   mockup: quotesondevDesktop,
+      mockup: quotesondevDesktop,
       technology: ["HTML", "CSS", "jQuery"],
       url: "https://github.com/risakanagawa/dev-quotes"
     },
