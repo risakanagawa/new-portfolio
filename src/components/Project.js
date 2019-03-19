@@ -31,7 +31,7 @@ class Project extends Component {
               })}
             </ul>
             {project.url ? (
-              <a href={project.url} className="github-btn">
+              <a href={project.url} target='_blank' className="github-btn">
                 Check it on Github!
               </a>
             ) : null}
