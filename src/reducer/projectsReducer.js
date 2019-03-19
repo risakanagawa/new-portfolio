@@ -46,7 +46,7 @@ const initialState = {
       img: ponggame,
       mockup: ponggameDesktop,
       technology: ["HTML", "CSS", "JavaScript"],
-      url: "https://github.com/risakanagawa/ponggame"
+      url: "https://github.com/risakanagawa/Pong-game"
     },
     {
       name: "Inhabitent",
