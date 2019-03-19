@@ -4,8 +4,9 @@
   "description": "portfolio website",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --mode production --open --hot",
-    "build": "webpack --mode production"
+    "dev": "webpack-dev-server --mode production --open --hot",
+    "start": "node server.js", 
+    "heroku-postbuild": "npm run build" 
   },
   "author": "Risa Kanagawa",
   "license": "ISC",
