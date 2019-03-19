@@ -4,7 +4,8 @@
   "description": "portfolio website",
   "main": "index.js",
   "scripts": {
-    "start": "npm install && webpack-dev-server --mode development --open --hot",
+    "dev": "webpack-dev-server --mode development --open --hot",
+    "start": "webpack --mode production",
     "build": "webpack --mode production"
   },
   "author": "Risa Kanagawa",
