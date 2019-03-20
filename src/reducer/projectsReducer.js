@@ -6,7 +6,7 @@ const devquotes = require("../../public/img/devquotes.png");
 const meetup = require("../../public/img/meetup.png");
 const dello = require("../../public/img/dello.png");
 const design1 = require("../../public/img/dailyUI01.gif");
-//mockup
+//mockup 
 const alohaDesktop = require("../../public/img/alohaDesktop.png");
 const instanewsDesktop = require("../../public/img/instanewsDesktop.png");
 const inhabitentDesktop = require("../../public/img/inhabitentDesktop.png");
