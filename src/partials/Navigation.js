@@ -12,7 +12,7 @@ class Navigation extends Component {
               <AnchorLink href="#about">ABOUT</AnchorLink>
             </li>
             <li>
-              <AnchorLink href="#work">WORK</AnchorLink>
+              <AnchorLink href="#work">WORKS</AnchorLink>
             </li>
             <li>
               <AnchorLink href="#contact">CONTACT</AnchorLink>
